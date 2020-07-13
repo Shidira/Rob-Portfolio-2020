@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #b6cbe1;
+    font-family: 'Flamenco', cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #001f3d;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #F85C70;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #F85C70;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+li,
+a,
+button {
+    font-family: 'Flamenco', cursive;
+    font-weight: 500;
+    font-size: 24px;
+    color: #b6cbe1;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #970c10;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    background-color: #b6cbe1;
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #001f3d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: 0px;
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+body {
+    background-color: #1f4591;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-text {
+    font-size: 24px;
+    padding-top: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.main-text h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #F85C70;
+}
+
+.fab {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.fab:hover {
+    color: #F85C70;
+}
+
+.fas {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.fas:hover {
+    color: #F85C70;
+}
+
+.devicon-csharp-plain {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.devicon-csharp-plain:hover {
+    color: #F85C70;
+}
+
+.footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    color: #b6cbe1;
+    font-size: 12px;
+    background-color: #1f4591;
+    margin-top: auto;
+}
+
+
+/* ----------------------------------------- END OF INDEX.HTML PAGE (Also contains content across all pages) ----------------------------------*/
+
+
+/* ----------------------------------------- START OF ABOUT.HTML PAGE -------------------------------------------------------------------------*/
+
+.main-text-about {
+    font-size: 24px;
+    padding-top: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.main-text-about h2 {
+    color: #F85C70;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.image-rob {
+    width: 300px;
+}
+
+
+/* ----------------------------------------- END OF ABOUT.HTML PAGE (Also contains content across all pages) ----------------------------------*/
+
+
+/* ----------------------------------------- START OF BLOG.HTML PAGE --------------------------------------------------------------------------*/
+
+.left-column {}
+
+.card {
+    margin-right: 0%;
+    margin-top: 20px;
+}
+
+.card img {
+    width: 600px;
+}
+
+.card h2 {
+    color: #F85C70;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.card h5 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 18px;
+}

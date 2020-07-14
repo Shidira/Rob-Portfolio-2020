@@ -229,8 +229,6 @@ body {
 
 /* ----------------------------------------- START OF BLOG.HTML PAGE --------------------------------------------------------------------------*/
 
-.left-column {}
-
 .card {
     margin-right: 0%;
     margin-top: 20px;
@@ -242,7 +240,7 @@ body {
 
 .card h2 {
     color: #F85C70;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -251,5 +249,6 @@ body {
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 20px;
+    width: 60%;
 }

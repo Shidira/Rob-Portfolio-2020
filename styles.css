@@ -150,6 +150,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    line-height: 25px;
 }
 
 .main-text h1 {
@@ -211,6 +212,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    line-height: 25px;
 }
 
 .main-text-about h2 {
@@ -220,7 +222,8 @@ body {
 }
 
 .image-rob {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
 }
 
 
@@ -235,7 +238,8 @@ body {
 }
 
 .card img {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .card h2 {
@@ -251,4 +255,32 @@ body {
 .card p {
     font-size: 20px;
     width: 60%;
+    line-height: 25px;
+}
+
+.myReturnButton {
+    box-shadow: inset 0px 1px 0px 0px #f7c5c0;
+    background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+    background-color: #fc8d83;
+    border-radius: 10px;
+    border: 1px solid #d83526;
+    display: inline-block;
+    cursor: pointer;
+    color: #b6cbe1;
+    font-family: 'Flamenco', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+}
+
+.myReturnButton:hover {
+    background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+    background-color: #e4685d;
+}
+
+.myReturnButton:active {
+    position: relative;
+    top: 1px;
 }
